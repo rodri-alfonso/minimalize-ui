@@ -13,12 +13,13 @@
 			"require": "./lib/index.js"
 		}
 	},
+	"types": "lib/index.d.ts",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
-		"prepare": "npx swc ./src/*/*index.tsx -d lib && npx swc ./src/index.tsx -d lib",
+		"prepare": "npx swc ./src/*/*index.tsx -d lib && npx swc ./src/index.tsx -d lib && npx tsc -p tsconfig.json",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
