@@ -1,43 +1,57 @@
 {
-  "name": "minimalize-ui",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@storybook/addon-essentials": "^7.5.3",
-    "@storybook/addon-interactions": "^7.5.3",
-    "@storybook/addon-links": "^7.5.3",
-    "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/blocks": "^7.5.3",
-    "@storybook/react": "^7.5.3",
-    "@storybook/react-vite": "^7.5.3",
-    "@storybook/testing-library": "^0.2.2",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "@vitejs/plugin-react": "^4.2.0",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "eslint-plugin-storybook": "^0.6.15",
-    "postcss": "^8.4.31",
-    "storybook": "^7.5.3",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
-  }
+	"name": "minimalize-ui",
+	"version": "0.0.1",
+	"type": "module",
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"license": "MIT",
+	"author": "rodri-alfonso",
+	"description": "Minimalize UI is a React UI library built with TailwindCSS and Typescript",
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"require": "./lib/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"prepare": "npx swc ./src/*/*index.tsx -d lib && npx swc ./src/index.tsx -d lib",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@storybook/addon-essentials": "^7.5.3",
+		"@storybook/addon-interactions": "^7.5.3",
+		"@storybook/addon-links": "^7.5.3",
+		"@storybook/addon-onboarding": "^1.0.8",
+		"@storybook/blocks": "^7.5.3",
+		"@storybook/react": "^7.5.3",
+		"@storybook/react-vite": "^7.5.3",
+		"@storybook/testing-library": "^0.2.2",
+		"@swc/cli": "^0.1.63",
+		"@swc/core": "^1.3.99",
+		"@types/react": "^18.2.37",
+		"@types/react-dom": "^18.2.15",
+		"@typescript-eslint/eslint-plugin": "^6.10.0",
+		"@typescript-eslint/parser": "^6.10.0",
+		"@vitejs/plugin-react": "^4.2.0",
+		"autoprefixer": "^10.4.16",
+		"eslint": "^8.53.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.4",
+		"eslint-plugin-storybook": "^0.6.15",
+		"postcss": "^8.4.31",
+		"storybook": "^7.5.3",
+		"tailwindcss": "^3.3.5",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.0"
+	}
 }
