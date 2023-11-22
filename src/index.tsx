@@ -1,2 +1,4 @@
-export { default as Button } from './Button'
-export { default as Typography } from './Typography'
+import Button from './Button'
+import Typography from './Typography'
+
+export { Button, Typography }

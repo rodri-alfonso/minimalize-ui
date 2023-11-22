@@ -1,9 +1,8 @@
 {
 	"name": "minimalize-ui",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"main": "lib/index.js",
-	"module": "lib/index.js",
 	"license": "MIT",
 	"author": "rodri-alfonso",
 	"description": "Minimalize UI is a React UI library built with TailwindCSS and Typescript",
