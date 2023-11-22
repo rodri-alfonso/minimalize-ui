@@ -1,6 +1,6 @@
 {
 	"name": "minimalize-ui",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"type": "module",
 	"main": "lib/index.js",
 	"license": "MIT",
@@ -20,7 +20,7 @@
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
-		"prepare": "npx tsc -p tsconfig.json",
+		"prepare": "npx swc ./src/*/*index.tsx -d lib && npx swc ./src/index.tsx -d lib && npx tsc -p tsconfig.json npx tsc -p tsconfig.json",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
