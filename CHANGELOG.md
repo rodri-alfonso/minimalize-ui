@@ -1,3 +1,7 @@
+### minimalize-ui@0.1.0
+
+- [FEATURE]: Create ModalBasic component
+
 ### minimalize-ui@0.0.3
 
 - [UPDATE]: Update package, export script and tsconfig
