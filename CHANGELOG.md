@@ -1,3 +1,7 @@
+### minimalize-ui@0.1.2
+
+- [FIX]: Fix ButtonGroup
+
 ### minimalize-ui@0.1.1
 
 - [FIX]: Fix index export

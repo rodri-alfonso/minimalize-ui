@@ -1,4 +1,4 @@
-import Button from '../Button'
+import Button from '../Button/index.js'
 
 interface ButtonGroupProps {
 	labelPrimary: string
