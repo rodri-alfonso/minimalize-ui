@@ -1,3 +1,7 @@
+### minimalize-ui@0.1.1
+
+- [FIX]: Fix index export
+
 ### minimalize-ui@0.1.0
 
 - [FEATURE]: Create ModalBasic component
