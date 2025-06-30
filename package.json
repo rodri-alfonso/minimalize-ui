@@ -1,7 +1,7 @@
 {
   "name": "minimalize-ui",
   "private": false,
-  "version": "2.1.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/minimalize-ui.cjs.js",
   "module": "dist/minimalize-ui.es.js",
