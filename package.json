@@ -6,7 +6,7 @@
   "main": "dist/minimalize-ui.cjs.js",
   "module": "dist/minimalize-ui.es.js",
   "unpkg": "dist/minimalize-ui.umd.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "style": "dist/style.css",
   "files": [
     "dist"
